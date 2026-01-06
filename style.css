@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #FFF8F3;
+    background: url("../images/developer.png"), url("../images/header_bg.png"),#FFF8F3;
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    padding-top: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.logo h2 {
+    font-size: 45px;
+    font-family: 800;
+}
+.color_change {
+    color: #FD6E0A;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 51px;
+    align-items: center;
+}
+
+.menu a {
+    font-size: 20px;
+    color: #474747;
+    text-decoration: none;
+}
+nav {
+    width: 71%;
+    max-width: 1140px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shared_button {
+    background-color: #FD6E0A; 
+    border: none;
+    padding: 18px 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#banner {
+border: 2px solid black;
+margin: 47px 38px 0 230px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.banner_content {
+    max-width: 585px;
+}
+
+.banner_content h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: #474747;
+    margin-bottom: 5px;
+}
+.banner_content h1 {
+    font-size: 85px;
+    font-weight: bold;
+    color: #181818;
+    margin-bottom: 20px;
+}
+.banner_content p {
+    font-size: 18px;
+    color: #757575;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.banner_image {
+    max-width: 585px;
+    vertical-align: middle;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#about {
+    padding-top: 130px;
+}
+
+.about_container {
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FFF8F3;
+    padding: 131px 156px;
+}
+
+.section_heading {
+    max-width: 827px;
+    text-align: center;
+
+}
+
+.section_heading h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.section_heading p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 30px ;
+    color: #474747;
+}
+
+.about_info {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info_card p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #757575;
+}
+
+.info_card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    
+}
