@@ -36,6 +36,7 @@ header {
     text-decoration: none;
 }
 nav {
+    flex-wrap: wrap;
     width: 71%;
     max-width: 1140px;
     margin: 0px auto;
@@ -57,7 +58,9 @@ nav {
 }
 
 .button_gap {
-    gap: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 #banner {
@@ -72,12 +75,11 @@ align-items: center;
     margin-top: -200px;
 }
 
-.banner_image {
-    width: 100%;            
-    height: auto;           
-    object-fit: cover;      
-    border-radius: 50%;     
-    display: block;         
+.banner_image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .banner_content h2 {
@@ -260,8 +262,13 @@ button:hover {
    gap: 116px;
 }
 
-.footer_1 {
-    margin-left: 150px;
+.footer_container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer_1, .footer_2 {
+    margin-left: 0;
 }
 
 .footer_2 {
@@ -294,6 +301,112 @@ button:hover {
     flex-direction: column;
     gap: 16px;
     margin-top: 30px;
+}
+
+.footer_link i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.hide {
+    
+    display: none !important;
+}
+
+#projects {
+    width: 71%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.project_card {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+@media screen and (max-width:576px) {
+    .container {
+        width: 95%
+    }
+
+    .section_heading h2 {
+    font-size: 30px;
+    
+    }
+
+    .nav {
+
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #banner {
+        margin: 20px;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .banner_content h1 {
+        font-size: 44px;
+    }
+
+    .banner_image {
+        width: 100%;
+    }
+
+    .button_gap {
+
+     justify-content: center;
+    }
+
+    header {
+
+     background:  url(../images/header_bg.png), #FFF8F3;
+     background-position: bottom right;
+    background-repeat: no-repeat;
+   
+}
+    .skills_cards {
+    flex-direction: column;
+   
+}
+
+.cards {
+    width: 100%;
+}
+
+    #about, #skills, #resume {
+       padding-top: 30px;
+} 
+
+.about_container {
+    padding: 20px;
+}
+.about_info {
+   flex-direction: column;
+   gap: 40px;
+}
+
+.resume_container {
+    flex-direction: column;
+}
+
+.footer_link {
+   flex-direction: column;
+}
+
 }
    
 
