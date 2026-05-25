@@ -56,6 +56,52 @@
 
     </div>
 
+    <!-- HAMBURGER ICON -->
+    <button id="menu-btn"
+      class="md:hidden text-2xl text-cyan-400">
+
+      <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu"
+    class="hidden md:hidden flex flex-col gap-4 px-6 pb-5 bg-slate-950 border-t border-slate-800">
+
+    <button onclick="navigate('home'); closeMenu()"
+      class="text-left hover:text-cyan-400 transition">
+      Home
+    </button>
+
+    <button onclick="navigate('about'); closeMenu()"
+      class="text-left hover:text-cyan-400 transition">
+      About
+    </button>
+
+    <button onclick="navigate('skills'); closeMenu()"
+      class="text-left hover:text-cyan-400 transition">
+      Skills
+    </button>
+
+    <button onclick="navigate('education'); closeMenu()"
+      class="text-left hover:text-cyan-400 transition">
+      Education
+    </button>
+
+    <button onclick="navigate('projects'); closeMenu()"
+      class="text-left hover:text-cyan-400 transition">
+      Projects
+    </button>
+
+    <button onclick="navigate('contact'); closeMenu()"
+      class="text-left hover:text-cyan-400 transition">
+      Contact
+    </button>
+
+  </div>
+
   </nav>
 
   <main class="px-4 md:px-8">
@@ -85,14 +131,7 @@
 
  <div class="mt-10 flex flex-wrap justify-center gap-4">
 
-     <a href="resume.pdf"
-        download
-       class="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-semibold transition duration-300 hover:scale-105 shadow-lg shadow-cyan-500/20">
-
-   <i class="fa-solid fa-download mr-2"> </i>
-       Download Resume
-
-   </a>
+     <a href="resume.pdf" download class="bg-cyan-500 hover:bg-cyan-600 px-5 py-2 rounded inline-block transition"> 📄 Download Resume </a>
 
  <button onclick="navigate('contact')"
      class="border border-cyan-500 hover:bg-cyan-500 px-6 py-3 rounded-lg font-semibold transition duration-300 hover:scale-105">
